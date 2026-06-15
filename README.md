@@ -26,14 +26,14 @@ Short version: CXCL13 carries real, age-independent prognostic information, but 
 
 ## Running it
 
-    source("staburo_biomarker_cutoff.R")
+    source("biomarker_cutoff.R")
 
 The first run needs curatedOvarianData from Bioconductor and a few CRAN stats packages:
 
     if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
     BiocManager::install("curatedOvarianData")
 
-Figures and tables are written to a staburo_results folder.
+Figures and tables are written to a results folder.
 
 ## Reusing it
 

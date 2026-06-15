@@ -1,5 +1,5 @@
 # =====================================================================
-# staburo_biomarker_cutoff.R  (reusable functions)
+# biomarker_cutoff.R  (reusable functions)
 # Prognostic biomarker cutoff & survival subgroup analysis
 # Data: curatedOvarianData (TCGA ovarian) | Biomarker: configurable
 # =====================================================================
@@ -83,7 +83,7 @@ validate_cutpoint <- function(dat, marker = "biomarker", time = "time",
        boot = boot, boot_ci = quantile(boot, c(.025, .5, .975)))
 }
 
-save_outputs <- function(dat, rc, surv, val, gene, outdir = "staburo_results") {
+save_outputs <- function(dat, rc, surv, val, gene, outdir = "results") {
   dir.create(outdir, showWarnings = FALSE)
   km <- ggsurvplot(surv$km, data = dat, pval = TRUE, risk.table = TRUE,
                    conf.int = TRUE, legend.labs = c("Low", "High"),
