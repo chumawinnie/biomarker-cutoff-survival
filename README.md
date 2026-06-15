@@ -14,6 +14,9 @@ The goal is to find a cutoff without fooling myself. Picking the threshold that 
 
 ## Results
 
+![Kaplan-Meier survival by CXCL13 group](results/kaplan_meier.png)
+
+
 On 557 patients with 290 deaths and a median follow-up of 2.4 years:
 
 - High CXCL13 patients live longer. Hazard ratio 0.67 (95% CI 0.53 to 0.85), unchanged after adjusting for age. CXCL13 is a known immune marker, so this direction is expected.
