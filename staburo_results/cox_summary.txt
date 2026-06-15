@@ -1,0 +1,41 @@
+== Univariable ==
+Call:
+coxph(formula = Surv(time, event) ~ group, data = dat)
+
+  n= 557, number of events= 290 
+
+             coef exp(coef) se(coef)      z Pr(>|z|)    
+groupHigh -0.3958    0.6731   0.1188 -3.332 0.000861 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+          exp(coef) exp(-coef) lower .95 upper .95
+groupHigh    0.6731      1.486    0.5333    0.8496
+
+Concordance= 0.545  (se = 0.017 )
+Likelihood ratio test= 11.03  on 1 df,   p=9e-04
+Wald test            = 11.1  on 1 df,   p=9e-04
+Score (logrank) test = 11.24  on 1 df,   p=8e-04
+
+
+== Age-adjusted ==
+Call:
+coxph(formula = Surv(time, event) ~ group + age, data = dat)
+
+  n= 557, number of events= 290 
+
+               coef exp(coef)  se(coef)      z Pr(>|z|)    
+groupHigh -0.400281  0.670132  0.118672 -3.373 0.000744 ***
+age        0.019549  1.019741  0.005438  3.595 0.000324 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+          exp(coef) exp(-coef) lower .95 upper .95
+groupHigh    0.6701     1.4922    0.5311    0.8456
+age          1.0197     0.9806    1.0089    1.0307
+
+Concordance= 0.606  (se = 0.019 )
+Likelihood ratio test= 23.9  on 2 df,   p=6e-06
+Wald test            = 24  on 2 df,   p=6e-06
+Score (logrank) test = 24.2  on 2 df,   p=6e-06
+
