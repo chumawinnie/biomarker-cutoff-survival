@@ -25,7 +25,7 @@ On 557 patients with 290 deaths and a median follow-up of 2.4 years:
 - The bootstrap picks a cutpoint near 3.8 most of the time, so the threshold is fairly stable.
 - The 3-year ROC has an AUC of 0.55. Collapsing survival into a single time point throws away most of the signal, which is why the survival cutoff is the main analysis and the ROC is secondary.
 
-Short version: CXCL13 carries real, age-independent prognostic information, but a single cutpoint is not strong enough to use as a clinical threshold without more data.
+CXCL13 carries real, age-independent prognostic information, but a single cutpoint is not strong enough to use as a clinical threshold without more data.
 
 ## Running it
 
