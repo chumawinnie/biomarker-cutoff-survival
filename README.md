@@ -13,7 +13,7 @@ The goal is to find a cutoff without fooling myself. Picking the threshold that 
 5. Validates the cutpoint two ways: a held-out test set and a bootstrap to see how much the threshold moves.
 
 ## Results
-
+ 
 ![Kaplan-Meier survival by CXCL13 group](results/kaplan_meier.png)
 
 
